@@ -31,30 +31,10 @@
 (use-package smex)
 
 (defun my-after-init-hook ()
-  (load "~/.emacs.d/suurphsettings.el")
-  (load "~/.emacs.d/suurphpython.el")
-  (load "~/.emacs.d/suurphkeybinds.el")
+  (load "~/.emacs.d/settings.el")
+  (load "~/.emacs.d/python.el")
+  (load "~/.emacs.d/keybinds.el")
   )
 
 
 (add-hook 'after-init-hook 'my-after-init-hook)
-
-
-
-
-(custom-set-variables
- ;; custom-set-variables was added by Custom.
- ;; If you edit it by hand, you could mess it up, so be careful.
- ;; Your init file should contain only one such instance.
- ;; If there is more than one, they won't work right.
- '(auto-save-file-name-transforms (quote ((".*" "~/.emacs.d/autosaves/\\1" t))))
- '(backup-directory-alist (quote ((".*" . "~/.emacs.d/backups/"))))
- '(package-selected-packages
-   (quote
-    (magit ace-window solarized-dark zenburn-theme powerline smex use-package multi-term))))
-(custom-set-faces
- ;; custom-set-faces was added by Custom.
- ;; If you edit it by hand, you could mess it up, so be careful.
- ;; Your init file should contain only one such instance.
- ;; If there is more than one, they won't work right.
- )

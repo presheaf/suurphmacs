@@ -25,10 +25,14 @@
 
 (menu-bar-mode -1)			; hides menu bar
 (tool-bar-mode -1)			; hides toolbar
+
 (setq initial-scratch-message ";; --scratchpad--")
+(setq inhibit-startup-screen t)
 
 ;;;;
 ;;;; stuff you need to set
 ;;;;
 
 ;; (setq default-directory "~/" ) ; the folder emacs "starts in"
+
+(fset 'yes-or-no-p 'y-or-n-p)
