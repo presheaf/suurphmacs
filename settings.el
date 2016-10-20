@@ -18,7 +18,7 @@
 
 
 ;;;; aesthetics
-(use-package zenburn-theme)
+
 ;; (load-theme 'zenburn t) ; probably unneccessary
 
 (powerline-default-theme)

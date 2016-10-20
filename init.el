@@ -19,16 +19,20 @@
   (package-refresh-contents)
   (package-install 'use-package))
 
-(require 'use-package)
+(require 'use-package)			; use-package means "if installed, require, if not, install and require)
 (setq use-package-always-ensure t)
  
 
+(require 'iso-transl)			; this is require because it's included in emacs
 
 (use-package powerline)
 (use-package multi-term)
-;; (use-package iso-transl) ;; prevents <dead-tilde>
-(require 'iso-transl)
 (use-package smex)
+(use-package zenburn-theme)
+(use-package magit)
+(use-package avy)
+(use-package ace-window)
+
 
 (defun my-after-init-hook ()
   (load "~/.emacs.d/settings.el")

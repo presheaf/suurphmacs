@@ -41,7 +41,7 @@
 (def-my-key "M-n" 'forward-paragraph)
 (def-my-key "M-p" 'backward-paragraph)
 
-(use-package magit)
+
 (def-my-key "C-c t" 'multi-term)
 (def-my-key "C-c p" 'run-python)
 (def-my-key "C-c g" 'magit-status)
@@ -51,8 +51,6 @@
 (def-my-key "<C-left>" 'previous-buffer)
 (def-my-key "C-x k" 'kill-this-buffer)
 
-(use-package avy)
-(use-package ace-window)
 (def-my-key "C-ø" 'avy-goto-word-or-subword-1)
 (def-my-key "C-o" 'ace-window)		;consider putting this on M-o
 (def-my-key "M-o" 'ignore)
