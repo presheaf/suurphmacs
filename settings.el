@@ -27,7 +27,10 @@
 (tool-bar-mode -1)			; hides toolbar
 
 (setq initial-scratch-message ";; --scratchpad--")
-(setq inhibit-startup-screen t)
+;; (setq inhibit-startup-screen t)
+
+(fset 'yes-or-no-p 'y-or-n-p)
+(setq confirm-nonexistent-file-or-buffer nil)
 
 ;;;;
 ;;;; stuff you need to set
@@ -35,4 +38,3 @@
 
 ;; (setq default-directory "~/" ) ; the folder emacs "starts in"
 
-(fset 'yes-or-no-p 'y-or-n-p)

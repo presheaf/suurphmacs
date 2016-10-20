@@ -16,6 +16,8 @@
 
 (when (fboundp 'windmove-default-keybindings)
   (windmove-default-keybindings))
+
+;;;; the below is some trickery I included because multi term played bad with my shortcuts. If you need it, uncomment it, if not, don't.
 ;; (when (require 'term nil t) ; only if term can be loaded..
 ;;   (add-hook 'term-mode-hook (lambda ()
 ;;                             (define-key term-raw-map (kbd "C-y") 'term-paste)))
